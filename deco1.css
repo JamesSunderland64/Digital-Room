@@ -763,112 +763,33 @@ img {
     }
 }
 
+/* Estilos para la sección de filtros en móviles */
 @media (max-width: 480px) {
-    .header-actions {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .search-container {
-        width: 100%;
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
-    .search-container input[type="text"] {
-        width: calc(100% - 50px);
-    }
-     .search-container input[type="text"]:focus {
-        width: calc(100% - 50px);
-    }
-    .auth-btn, .cart-container {
-        margin-left: 0;
-        margin-top: 10px;
-        width: 100%;
-        text-align: center;
-    }
-     .auth-btn {
-        display: block;
-    }
-    .cart-container {
-        justify-content: center;
-    }
-     .game-card img {
-        height: 350px;
-    }
-}
-
-@media (max-width: 480px) {
-  /* Header general */
-  .site-header .container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .logo-img {
-    width: 100px;
-    height: auto;
-  }
-
-  .logo-gamer {
-    font-size: 1.4em;
-  }
-
-  .search-container {
-    width: 100%;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 10px;
-  }
-
-  .search-container input[type="text"] {
-    width: 65%;
-    padding: 8px;
-    font-size: 0.9em;
-  }
-
-  .auth-btn {
-    width: 80%;
-    padding: 10px;
-    font-size: 1em;
-    margin: 5px auto;
-  }
-
-  .cart-container {
-    margin: 10px auto;
-  }
-
-  .menu-toggle {
-    font-size: 1.8em;
-    display: block;
-    align-self: flex-end;
-  }
-
-  .main-nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-    gap: 10px;
-  }
-
-  .main-nav.show {
-    display: flex;
-  }
-
-  .main-nav a {
-    background-color: var(--background-light);
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-  }
-
   .filters-section {
     padding: 20px 10px;
   }
 
+  .filters-section h2 {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
   .filter-btn {
+    padding: 10px 16px;
     font-size: 0.9em;
-    padding: 8px 12px;
-    margin: 5px;
+    border-radius: 12px;
+    background-color: #113f67;
+    color: white;
+    border: 1px solid #1f88d9;
+    text-align: center;
+    white-space: nowrap;
   }
 }
