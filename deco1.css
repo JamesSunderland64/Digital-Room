@@ -795,3 +795,151 @@ img {
         height: 350px;
     }
 }
+
+/* === Estilos Responsive - Full Chilling === */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .game-card img,
+    .offer-card img {
+        height: 300px;
+    }
+
+    .search-container input[type="text"] {
+        width: 150px;
+    }
+
+    .search-container input[type="text"]:focus {
+        width: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main-nav li {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        background-color: var(--background-light);
+        border-radius: var(--border-radius);
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .header-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .search-container {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .auth-btn,
+    .cart-container {
+        margin: 5px 0;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    .games-grid,
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-gamer {
+        font-size: 1.5em;
+    }
+
+    .logo-img {
+        width: 120px;
+        height: 70px;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+    }
+
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 8px 18px;
+        font-size: 0.9em;
+    }
+
+    .game-card img,
+    .offer-card img {
+        height: 250px;
+    }
+
+    .game-info h3,
+    .offer-content h3 {
+        font-size: 1.2em;
+    }
+
+    .site-footer {
+        text-align: center;
+    }
+}
