@@ -216,13 +216,3 @@ document.addEventListener('DOMContentLoaded', function() {
         document.head.appendChild(styleSheet);
     }
 });
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".main-nav");
-
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("show");
-    });
-  });
-</script>
